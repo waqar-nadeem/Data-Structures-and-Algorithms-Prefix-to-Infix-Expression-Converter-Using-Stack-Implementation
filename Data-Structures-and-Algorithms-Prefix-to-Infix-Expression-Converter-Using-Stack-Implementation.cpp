@@ -22,7 +22,7 @@ string prefixToInfix(string prefix) {
     for (int i = prefix.length() - 1; i >= 0; i--) {
         char c = prefix[i];
         if (isalpha(c)) {
-            s.push(string(1, c));  // push operand
+            s.push(string(1, c));  
         } else if (isOperator(c)) {
             string op1 = s.pop();
             string op2 = s.pop();
